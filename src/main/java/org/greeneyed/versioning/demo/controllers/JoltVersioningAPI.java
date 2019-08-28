@@ -24,8 +24,9 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-@RequestMapping(value = "jolt")
+@RequestMapping(value = JoltVersioningAPI.API_PATH)
 public class JoltVersioningAPI {
+	static final String API_PATH = "jolt";
 	private final PojoService pojoService;
 
 	@Data

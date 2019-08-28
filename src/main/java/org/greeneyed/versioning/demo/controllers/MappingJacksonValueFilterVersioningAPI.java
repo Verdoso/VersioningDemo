@@ -36,9 +36,10 @@ import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-@RequestMapping(value = "mapping_jackson_filter")
+@RequestMapping(value = MappingJacksonValueFilterVersioningAPI.API_PATH)
 public class MappingJacksonValueFilterVersioningAPI {
 
+	static final String API_PATH = "mapping_jackson_filter";
 	private final PojoService pojoService;
 
 	@Data

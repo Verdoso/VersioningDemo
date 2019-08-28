@@ -19,9 +19,10 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-@RequestMapping(value = "views")
+@RequestMapping(value = ViewsVersioningAPI.API_PATH)
 public class ViewsVersioningAPI {
 
+	static final String API_PATH = "views";
 	private final PojoService pojoService;
 
 	@RequestMapping(value = "/v1/test", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+        <jolt.version>0.1.0</jolt.version>
 	</properties>
 
 	<dependencies>
@@ -45,6 +46,18 @@
 			<artifactId>summer</artifactId>
 			<version>0.10.7</version>
 		</dependency>
+
+        <dependency>
+            <groupId>com.bazaarvoice.jolt</groupId>
+            <artifactId>jolt-core</artifactId>
+            <version>${jolt.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.bazaarvoice.jolt</groupId>
+            <artifactId>json-utils</artifactId>
+            <version>${jolt.version}</version>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

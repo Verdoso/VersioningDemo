@@ -1,0 +1,21 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+    	"id": "id",
+    	"pojoAPIs": {
+	      "*": {
+	        "id": [
+	          "pojoAPIs[&1].id"
+	        ],
+	        "name": [
+	          "pojoAPIs[&1].name"
+	        ],
+	        "related": {
+	        	"id": "pojoAPIs[&2].related-id"
+        	}
+	      }
+    	}
+    }
+  }
+]

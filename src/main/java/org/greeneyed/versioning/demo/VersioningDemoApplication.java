@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableSummer(log4j = false)
+@EnableSummer(log4j = false, jolt_view = true)
 public class VersioningDemoApplication {
 
 	public static void main(String[] args) {

@@ -27,7 +27,7 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping(value = MappingJacksonValueViewsVersioningAPI.API_PATH)
 public class MappingJacksonValueViewsVersioningAPI {
 	
-	static final String API_PATH = "mapping_jackson_views";
+	public static final String API_PATH = "mapping_jackson_views";
 	private static final Map<VERSION,Class<? extends Common>> VIEWS_BY_VERSION;
 	static {
 		VIEWS_BY_VERSION = new HashMap<>();

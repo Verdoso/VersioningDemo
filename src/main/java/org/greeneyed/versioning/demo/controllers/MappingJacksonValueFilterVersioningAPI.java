@@ -38,7 +38,7 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping(value = MappingJacksonValueFilterVersioningAPI.API_PATH)
 public class MappingJacksonValueFilterVersioningAPI {
 
-	static final String API_PATH = "mapping_jackson_filter";
+	public static final String API_PATH = "mapping_jackson_filter";
 	private final PojoService pojoService;
 
 	@Data

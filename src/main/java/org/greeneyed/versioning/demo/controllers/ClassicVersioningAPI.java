@@ -22,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping(value = ClassicVersioningAPI.API_PATH)
 public class ClassicVersioningAPI {
 
-	static final String API_PATH = "classic";
+	public static final String API_PATH = "classic";
 	private final PojoService pojoService;
 
 	@RequestMapping(value = "/{version}/test", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

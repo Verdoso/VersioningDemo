@@ -27,8 +27,7 @@ public class ClassicVersioningAPI {
 
 	@RequestMapping(value = "/{version}/test", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public App testInterface(@PathVariable(name = "version") VERSION version) {
-		App app = new App("Listing", getVersionedPojos(version));
-		return app;
+		return new App("Listing", getVersionedPojos(version));
 	}
 
 	private List<PojoAPI> getVersionedPojos(VERSION version) {
